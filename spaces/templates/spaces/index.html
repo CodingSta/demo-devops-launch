@@ -1,0 +1,28 @@
+{% extends "spaces/layout.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="{% static "intro.png" %}" class="img-fluid" />
+            </div>
+        </div>
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="https://montemagno.com/content/images/2017/12/IQsRzovW.jpg" style="width: 100px;" />
+            <h2 id="session-title" class="mb-4"></h2>
+            <h5 id="session-subtitle" class="mb-5"></h5>
+            {# <p class="lead"></p> #}
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_body %}
+    <script>
+        $(function() {
+            $("#session-title").html("Azure Pipeline, Python을 CI, AWS로 CD 프랙티스 Demo");
+            $("#session-subtitle").html("이것은 Azure인가 AWS인가. Azure와 Python과 AWS가 함께하는 DevOps 콜라보");
+        });
+    </script>
+{% endblock %}
+
