@@ -8,4 +8,5 @@
 + 발표 : 이진석 (me@askcompany.kr)
     - Microsoft Azure MVP
     - Ask Django 운영자
+    - https://askcompany.kr
 
