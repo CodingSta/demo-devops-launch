@@ -8,3 +8,7 @@ class TestSpaces(TestCase):
         response = self.client.get(resolve_url('spaces:index'))
         self.assertEqual(response.status_code, 200)
 
+    def test_index_page(self):
+        response = self.client.get(resolve_url('spaces:index'))
+        self.assertContains(response, 'made by Python/Django')
+
